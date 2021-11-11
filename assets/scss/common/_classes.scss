@@ -1,0 +1,36 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 60px;
+  padding-right: 1em;
+  padding-left: 1em;
+
+  transition: background-color 0.5s;
+  letter-spacing: 0.1em;
+
+  color: $color-light;
+
+  font-size: 1.125rem;
+
+  &--light {
+    width: 250px;
+
+    border: 2px solid $color-light;
+    background-color: rgba($color-light, 0.1);
+  }
+
+  &--primary {
+    width: 350px;
+
+    border: 2px solid $color-primary;
+    background-color: rgba($color-primary, 0.8);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
+}
+

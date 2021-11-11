@@ -1,0 +1,54 @@
+@import "libs/normalize.css/normalize.scss";
+
+@import "presets/variables";
+@import "presets/skin";
+
+@import "common/typography";
+@import "common/classes";
+
+@import "components/header/header";
+@import "components/header/header-overlay";
+@import "components/header/header-content";
+@import "components/header/header-menu";
+@import "components/header/header-logo";
+@import "components/header/header-navbar";
+
+@import "components/sections/skills/skills";
+@import "components/sections/skills/skill-item";
+
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-content__title {
+    margin: 0 0 43px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content__title {
+    margin: 0 0 33px;
+  }
+}
+
+@media (min-width: 691px) {
+  .skill-item {
+    min-height: calc(33.3333vh - 13.3333px);
+  }
+}
+
+@media (max-height: 690px) {
+  .skill-item {
+    min-height: calc(230px - 13.3333px);
+  }
+}
